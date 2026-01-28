@@ -1,7 +1,8 @@
 <script setup lang="ts">
-
+import {User} from'@/stores/applicationUser.ts'
+const count = User();
 </script>
 
 <template>
-    <header>参加申し込みフォーム</header>
+    <header>{{count.headerTitle}}</header>
 </template>
